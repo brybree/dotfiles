@@ -6,7 +6,6 @@
  '(auth-source-save-behavior nil)
  '(custom-safe-themes
    '("c5878086e65614424a84ad5c758b07e9edcf4c513e08a1c5b1533f313d1b17f1" default))
- '(elfeed-feeds '("https://unixdigest.com/feed.rss"))
  '(package-selected-packages '(apheleia prettier zig-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
