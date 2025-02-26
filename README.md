@@ -37,6 +37,9 @@ If however, you do not want zsh, here the modification you should do after cloni
 
 ## Vim
 1. [Install vim][vim]
+2. [Install vim-plug][vimplug]
+3. Run `vim`
+4. Install plugins with `:PlugInstall`
 
 ## Zsh
 1. [Install zsh, using oh-my-zsh][zsh] 
@@ -48,4 +51,5 @@ If however, you do not want zsh, here the modification you should do after cloni
 [tmux]: https://github.com/tmux/tmux/ 
 [tpm]: https://github.com/tmux-plugins/tpm/
 [vim]: https://github.com/vim/vim/
+[vimplug]: https://github.com/junegunn/vim-plug/
 [zsh]: https://ohmyz.sh/ 
