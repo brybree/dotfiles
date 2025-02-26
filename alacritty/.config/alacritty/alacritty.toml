@@ -1,0 +1,22 @@
+
+window.decorations="Full"
+# window.opacity=0.95
+window.dynamic_title=false
+window.decorations_theme_variant="Light"
+
+selection.save_to_clipboard=true
+
+mouse.hide_when_typing=true
+
+[font]
+size=12
+
+[font.normal]
+family="JetBrainsMono Nerd Font"
+style="Regular"
+
+[terminal]
+shell="/bin/zsh"
+
+[keyboard]
+bindings = [{ key = "F11", action = "ToggleFullscreen" }]
