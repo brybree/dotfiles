@@ -106,4 +106,4 @@ bindkey '^I'   complete-word       # tab          | complete
 bindkey '^[[Z' autosuggest-accept  # shift + tab  | autosuggest
 
 # Load Vim in .config folder
-export VIMINIT="source /home/brice/.config/vim/vim.conf"
+export VIMINIT="source $HOME/.config/vim/vim.conf"
