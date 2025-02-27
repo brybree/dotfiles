@@ -26,8 +26,9 @@ If however, you do not want zsh, here the modification you should do after cloni
 
 ## Doom
 1. [Install doom][doom]
-> [!TODO]
-> Detail the emacs installation
+2. 
+> [!WARNING]
+> Don't forget [native-comp][nativecomp] when installing emacs.
 
 ## Tmux
 1. [Install tmux][tmux]
@@ -47,6 +48,7 @@ If however, you do not want zsh, here the modification you should do after cloni
 [alacritty]: https://github.com/alacritty/alacritty/ 
 [doom]: https://github.com/doomemacs/doomemacs/ 
 [jetbrainsmono]: https://www.nerdfonts.com/
+[nativecomp]: https://www.emacswiki.org/emacs/GccEmacs/
 [stow]: https://www.gnu.org/software/stow/ 
 [tmux]: https://github.com/tmux/tmux/ 
 [tpm]: https://github.com/tmux-plugins/tpm/
