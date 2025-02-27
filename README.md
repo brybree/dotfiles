@@ -21,12 +21,13 @@ If however, you do not want zsh, here the modification you should do after cloni
 ## Alacritty
 1. [Install alacritty][alacritty]
 2. [Install the JetBrainsMono Nerd Font][jetbrainsmono]
-> [!TODO]
-> Detail the font installation
+> [!NOTE]
+> To install a nerd font, you need to retrieve the font:  
+`curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz`  
+and extract it to the directory ~/.local/share/fonts/NerdFonts
 
 ## Doom
 1. [Install doom][doom]
-2. 
 > [!WARNING]
 > Don't forget [native-comp][nativecomp] when installing emacs.
 
