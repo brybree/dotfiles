@@ -1,0 +1,21 @@
+.
+├── init.lua # Entry point - loads everything
+├── lsp # LSP servers configuration
+│   ├── lua_ls.lua # LUA
+│   └── zls.lua # ZIG
+├── lua # Neovim Core configuration
+│   ├── config # Core configuration modules
+│   │   ├── autocmds.lua # Automatic behaviors
+│   │   ├── diagnostics.lua # Error/warning appearance
+│   │   ├── init.lua # Orchestrates loading order
+│   │   ├── keymaps.lua # All keyboard shortcuts
+│   │   ├── lsp.lua # Enable LSP servers
+│   │   └── options.lua # Neovim behavior settings
+│   └── plugins # Plugins configuration
+│       ├── conform.lua # Formatter
+│       ├── init.lua # Orchestrates loading order
+│       ├── theme.lua # Theme
+│       ├── treesitter.lua # Syntax highlighting
+│       └── whichkey.lua # Helper which show key mapping
+├── nvim-pack-lock.json # Plugins versioned by neovim
+└── README # This file

@@ -1,0 +1,114 @@
+local opt = vim.opt
+
+-- Basic
+opt.number = true -- Line numbers
+opt.relativenumber = true -- Relative line numbers
+opt.cursorline = true -- Highlight current line
+opt.scrolloff = 10 -- Keep X lines above/below cursor
+opt.sidescrolloff = 8 -- Keep X columns left/right of cursor
+
+-- Indentation
+opt.tabstop = 4 -- Tab width
+opt.shiftwidth = 4 -- Indent width
+opt.softtabstop = 4 -- Soft tab stop
+opt.smartindent = true -- Smart auto-indenting
+opt.autoindent = true -- Copy indent from current line
+
+-- Search
+opt.ignorecase = true -- Case insensitive search
+opt.smartcase = true -- Case sensitive if uppercase in search
+opt.hlsearch = false -- Don't highlight search results
+opt.incsearch = true -- Show matches as you type
+
+-- Visual
+opt.termguicolors = true -- Enable 24-bit colors
+opt.signcolumn = "yes" -- Always show sign column
+opt.showmatch = true -- Highlight matching brackets
+opt.matchtime = 2 -- How long to show matching brackets
+opt.cmdheight = 1 -- Command line height
+opt.showmode = false -- Don't show mode in command line
+opt.pumheight = 10 -- Popup menu height
+opt.pumblend = 10 -- Popup menu transparency
+opt.winblend = 0 -- Floating window transparency
+opt.completeopt = "menu,menuone,noselect" -- Complete options for LSP
+opt.conceallevel = 2 -- Hide * markup for bold and italic, but not markers with substitutions
+opt.confirm = true -- Confirm to save changes before exiting modified buffer
+opt.concealcursor = "" -- Don't hide cursor line markup
+opt.synmaxcol = 300 -- Syntax highlighting limit
+opt.ruler = false -- Disable the default ruler
+opt.virtualedit = "block" -- Allow cursor to move where there is no text in visual block mode
+opt.winminwidth = 5 -- Minimum window width
+
+-- File handling
+opt.backup = false -- Don't create backup files
+opt.writebackup = false -- Don't create backup before writing
+opt.swapfile = false -- Don't create swap files
+opt.undofile = true -- Persistent undo
+opt.undolevels = 10000 -- Number of undo history
+opt.undodir = vim.fn.expand("~/.config/vim/undodir") -- Undo directory
+opt.updatetime = 300 -- Faster completion
+opt.timeoutlen = vim.g.vscode and 1000 or 300 -- Lower than default (1000) to quickly trigger which-key
+opt.ttimeoutlen = 0 -- Key code timeout
+opt.autoread = true -- Auto reload files changed outside vimo
+opt.autowrite = true -- Auto save
+
+-- Behavior
+opt.hidden = true -- Allow hidden buffers
+opt.errorbells = false -- No error bells
+opt.backspace = "indent,eol,start" -- Better backspace behavior
+opt.autochdir = false -- Don't auto change directory
+opt.iskeyword:append("-") -- Treat dash as part of word
+opt.path:append("**") -- Include subdirectories in search
+opt.selection = "exclusive" -- Selection behavior
+opt.mouse = "a" -- Enable mouse support
+opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
+opt.modifiable = true -- Allow buffer modifications
+opt.encoding = "UTF-8" -- Set encoding
+
+-- Folding
+opt.smoothscroll = true -- Smooth scrool
+vim.wo.foldmethod = "expr" -- Fold method
+opt.foldlevel = 99 -- Start with all folds open
+opt.formatoptions = "jcroqlnt" -- tcqj
+opt.grepformat = "%f:%l:%c:%m" -- Better grep format
+opt.grepprg = "rg --vimgrep" -- Better rg
+
+-- Split behavior
+opt.splitbelow = true -- Horizontal splits go below
+opt.splitright = true -- Vertical splits go right
+opt.splitkeep = "screen" -- Stabilize text, doesn't move cursor
+
+-- Command-line completion
+opt.wildmenu = true -- Wild menu
+opt.wildmode = "longest:full,full" -- Wild menu mode
+
+-- Better diff options
+opt.diffopt:append("linematch:60") -- Improve diff alignment by matching similar lines within a 60-line window
+
+-- Performance improvements
+opt.redrawtime = 10000 -- Allow up to 10s for screen redraws (helps with large files/syntax highlighting)
+opt.maxmempattern = 20000 -- Increase memory limit for pattern matching/search operations
+
+vim.g.autoformat = true -- Enable automatic formatting support
+vim.g.trouble_lualine = true -- Integrate trouble diagnostics/status into lualine
+
+-- Better characters for folds
+opt.fillchars = {
+	foldopen = " ",
+	foldclose = " ",
+	fold = " ",
+	foldsep = " ",
+	diff = "╱",
+	eob = " ",
+}
+
+opt.jumpoptions = "view" -- Preserve and restore window view state when using the jumplist
+opt.laststatus = 3 -- Global statusline
+opt.list = false -- -- Do not display whitespace characters
+opt.linebreak = true -- Wrap lines at convenient points
+opt.list = true -- Show some invisible characters (tabs...
+opt.shiftround = true -- Round indent
+opt.shiftwidth = 2 -- Size of an indent
+opt.shortmess:append({ W = true, I = true, c = true, C = true }) -- Suppress various completion messages for a cleaner UI
+
+vim.g.markdown_recommended_style = 0 -- Disable Neovim's default markdown formatting settings
