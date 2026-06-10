@@ -25,8 +25,14 @@ If you want to unstow the package, run `stow -D <package>`, which will remove th
 
 1. [Install zsh, using oh-my-zsh][zsh]
 
+## Nvim
+
+1. Install [nvim][nvim]
+2. Open nvim and run `lua vim.pack.add()`
+
 [alacritty]: https://github.com/alacritty/alacritty/
 [jetbrainsmono]: https://www.nerdfonts.com/
+[nvim]: https://neovim.io/doc/install/
 [stow]: https://www.gnu.org/software/stow/
 [tmux]: https://github.com/tmux/tmux/
 [tpm]: https://github.com/tmux-plugins/tpm/
