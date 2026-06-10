@@ -72,6 +72,9 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
+# Functions Path
+fpath+="$HOME/.config/zsh/.zfunc"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -105,5 +108,7 @@ fi
 bindkey '^I'   complete-word       # tab          | complete
 bindkey '^[[Z' autosuggest-accept  # shift + tab  | autosuggest
 
-# Load Vim in .config folder
-export VIMINIT="source $HOME/.config/vim/vim.conf"
+# NVM specifics..
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
